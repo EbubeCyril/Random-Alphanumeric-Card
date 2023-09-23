@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(191, 21, 21, 0.178);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container {
+    background-Color: rgba(255, 0, 0, 0.9);
+    height: 15rem;
+    width: 30rem;
+    position: relative;
+    overflow-x: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0 70px 4px #7e7e80;
+}
+
+ /* DIV THAT ARE POSITONED ON THE TOP LEFT AND BOTTOM RIGHT  */
+#container .child-div1 {
+    background-color: rgba(136, 91, 134, 0.4);
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    margin-inline-start: -20px;
+}
+
+#container .child-div2 {
+    background-color: rgba(136, 91, 134, 0.4);
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-inline-end: -20px;
+}
+
+ /* TEXT INPUT AREA */
+ .input-div {
+    margin-block-start: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .input-div input {
+    padding: 0.4rem;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(228, 210, 233);
+ }
+
+ .input-div input::placeholder {
+    opacity: 0.5;
+    font-family: cursive, sans-serif;
+ }
+
+ /* NEXT & COPY ICON AREA */
+ .next-button-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+ }
+
+ .next-button-div .copy-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: cursive, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 20px;
+    border-radius: 10px;
+    color: #ffff;
+    cursor: pointer;
+ }
+
+ .next-button-div .copy-container:hover {
+    color: grey;
+    transition: .1s ease-in-out;
+ }
+
+ .next-button-div button {
+    width: 32%;
+    padding: 0.6rem 0.5rem;
+    font-family: cursive, sans-serif;
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.7));
+    border: none;
+    border-radius: 10px;
+    color: #ffff;
+    letter-spacing: .2rem;
+    cursor: pointer;
+ }
+
+ .next-button-div button:hover {
+    background-color: rgba(136, 91, 134, 0.7);
+ }
+
+ .next-button-div button:active {
+   transform: scale(.9);
+   transition: .5s ease-out;
+ }
+
+ #container .para {
+    color:rgb(32, 43, 103);
+    font-size: 0.7rem;
+    font-family: cursive;
+    margin-top: 2.5rem;
+    margin-left: 6px;
+    text-align: left;
+ }
+
+
+ /* MEDIA QUERY */
+ @media (max-width: 500px) {
+    #container {
+        width: 20rem;
+    }
+    
+    .input-div input {
+        width: 60%;
+     }
+ }
+
+ 

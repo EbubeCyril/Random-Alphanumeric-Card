@@ -1,2 +1,2 @@
 # Random-Link-Shortener
- Generates Random Links
+ Generates Random Alphanumerics
